@@ -17,8 +17,33 @@ con condiciones iniciales
  Procedimiento:
 \end{center}
 Evaluamos n con 0, 1 y 2 para obtener otros de los valores iniciales\\
-$n=0, $\ $x_2=4x_0=4$\\
-$n=1, $\ $x_3=4x_1=-4$\\
-$n=2, $\ $x_4=4x_2=16$
+$$n=0, \ x_2=4x_0=4$$
+$$n=1, \ x_3=4x_1=-4$$
+$$n=2, \ x_4=4x_2=16$$
+Después de evaluar los primeros valores para $n$, con la ecuación
+$$x_{n+2}-4x_n=0,$$
+tenemos lo siguiente
+$$r^2-4=0$$
+Despejamos r, para obtener $r_1$ y $r_2$\\
+$$=> r_1=2, r_2=-2$$
+Teniendo los valores para $r_1$ y $r_2$ sustituimos en la formula
+$x_n=\alpha_1(r_1)^n+\alpha_2(r_2)^n$
+y queda de la siguiente manera
+$x_n=\alpha_1(2)^n+\alpha_2(-2)^n$
+Ahora evaluando los valores iniciales en la ecuación anterior haremos un sistema de ecuaciones para obtener los valores de $\alpha_1 y \alpha_2$
+\begin{align*}
+  => x_0&=\alpha_1(2)^0+\alpha_2(-2)^0\\
+        &=\alpha_1+\alpha_2\\
+        &=1\\
+  => x_1&=\alpha_1(2)^1+\alpha_2(-2)^1\\
+        &=(2)\alpha_1+(-2)\alpha_2\\
+        &=-1
+\end{align*}
+Con esto despejamos en cada una de las $x$ a $\alpha_1$ entonces se tiene lo siguiente
+\begin{align*}
+  \alpha_1&=1-\alpha_2\\
+  \alpha_1&=\frac{-1+2\alpha_2}{2}
+\end{align*}
+
 
 \end{document}
